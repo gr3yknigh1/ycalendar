@@ -19,12 +19,16 @@ import {
 } from '@/routes';
 
 
-function GoBackLink() {
+interface GoBackLinkProps {
+  ignorePathNames: string[];
+}
+
+function GoBackLink(props: GoBackLinkProps) {
   const navigate = useNavigate();
   const location = useLocation();
 
   const goBack = useCallback(() => {
-    if (location.pathname == '/') {
+    if (location.pathname in props.ignorePathNames) {
       navigate(0);
       return;
     }
@@ -49,7 +53,9 @@ export default function App(): JSX.Element {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <footer className='app__footer'>
-        { location.pathname !== '/' && <GoBackLink />}
+        <nav>
+          { location.pathname !== '/' && <GoBackLink ignorePathNames={['/']} />}
+        </nav>
       </footer>
     </Provider>
   );
