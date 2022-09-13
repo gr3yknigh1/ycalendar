@@ -3,6 +3,8 @@ import { Provider } from 'react-redux';
 import {
   Routes,
   Route,
+  useNavigate,
+  useLocation
 } from 'react-router-dom';
 
 import store from './store';
@@ -16,7 +18,25 @@ import {
 } from '@/routes';
 
 
+function GoBackLink() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const goBack = useCallback(() => {
+    if (location.pathname == '/') {
+      navigate(0);
+      return;
+    }
+    navigate(-1);
+  }, [navigate, location]);
+
+  return (
+    <a className='link' onClick={ goBack }>Go back</a>
+  );
+}
+
 export default function App(): JSX.Element {
+  const location = useLocation();
 
   return (
     <Provider store={ store }>
@@ -27,6 +47,9 @@ export default function App(): JSX.Element {
         <Route path="/calendar" element={<CalendarPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+      <footer className='app__footer'>
+        { location.pathname !== '/' && <GoBackLink />}
+      </footer>
     </Provider>
   );
 }
