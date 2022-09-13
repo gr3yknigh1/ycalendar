@@ -6,8 +6,13 @@ import {
 
 export default function HomePage() {
   return (
-    <main>
-      <PageList />
-    </main>
+    <>
+      <main>
+        Home page
+      </main>
+      <nav>
+        <PageList />
+      </nav>
+    </>
   );
 }
