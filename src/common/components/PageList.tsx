@@ -3,10 +3,13 @@ import { Link } from 'react-router-dom';
 
 
 export default function PageList() {
+  // NOTE(gr3yknigh1): extract page path list
   const pageLinks = ['/', 'about', 'settings', 'calendar'].map(
-    (path, index) => <Link className='link' key={index} to={path}> { path } </Link>
-  ).map(
-    (link, index) => <li key={index}> { link } </li>
+    (path, index) => {
+      return <li key={index}>
+        <Link className='link' to={ path }> { path } </Link>
+      </li>;
+    }
   );
 
   return (
