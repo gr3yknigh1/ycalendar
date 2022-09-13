@@ -1,0 +1,24 @@
+{
+  "name": "your-cal",
+  "version": "0.1.0",
+  "description": "Dam simple calendar app",
+  "main": "src/server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gr3yknigh1/your-cal.git"
+  },
+  "keywords": [
+    "calendar",
+    "react",
+    "redux"
+  ],
+  "author": "Ilya Akkuzin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gr3yknigh1/your-cal/issues"
+  },
+  "homepage": "https://github.com/gr3yknigh1/your-cal#readme"
+}
