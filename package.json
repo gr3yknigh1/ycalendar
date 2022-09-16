@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "description": "Dam simple calendar app",
   "scripts": {
-    "start": "npx webpack-dev-server --mode development --open --hot",
-    "build": "npx webpack --mode production",
-    "lint": "npx eslint ./src/"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
