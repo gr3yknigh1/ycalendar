@@ -4,7 +4,7 @@
   display: block;
 }
 
-* {
+*, *::before, *::after {
   margin: 0px;
   padding: 0px;
   border: none;
