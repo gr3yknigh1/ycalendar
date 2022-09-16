@@ -3,7 +3,7 @@
     "outDir": "./dist/",
     "module": "ESNext",
     "target": "es5",
-    "jsx": "react",
+    "jsx": "preserve",
     "moduleResolution": "node",
 
     "typeRoots": ["./src/types", ".node_modules/@types"],
