@@ -1,5 +1,5 @@
 {
-  "name": "your-cal",
+  "name": "ycalendar",
   "version": "0.1.0",
   "description": "Dam simple calendar app",
   "scripts": {
@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gr3yknigh1/your-cal.git"
+    "url": "git+https://github.com/gr3yknigh1/ycalendar.git"
   },
   "keywords": [
     "calendar",
@@ -47,7 +47,7 @@
   "author": "Ilya Akkuzin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gr3yknigh1/your-cal/issues"
+    "url": "https://github.com/gr3yknigh1/ycalendar/issues"
   },
-  "homepage": "https://github.com/gr3yknigh1/your-cal#readme"
+  "homepage": "https://github.com/gr3yknigh1/ycalendar#readme"
 }
