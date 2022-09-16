@@ -21,9 +21,9 @@
   "parser": "@typescript-eslint/parser",
 
   "ignorePatterns": [
-    "./node_modules/*",
-    "./dist/*",
-    "**/*.spec.ts"
+    "node_modules",
+    "dist",
+    ".next"
   ],
 
   "parserOptions": {
