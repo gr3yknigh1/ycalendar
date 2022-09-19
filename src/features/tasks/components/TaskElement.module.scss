@@ -1,0 +1,8 @@
+
+.task-element {
+  cursor: pointer;
+
+  &:hover {
+    color: red;
+  }
+}
