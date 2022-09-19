@@ -9,6 +9,7 @@ export default function Index() {
         <title>YCalendar</title>
       </Head>
       <header>
+        <h1>YCalendar</h1>
       </header>
       <main>
         <React.Fragment>
