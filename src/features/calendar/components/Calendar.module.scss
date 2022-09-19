@@ -1,0 +1,36 @@
+@use '/styles/utils';
+
+.calendar {
+  display: grid;
+
+  grid-template-columns: 10% auto 10%;
+  grid-template-rows: 80px auto;
+
+  height: 100vh;
+}
+
+.top-panel {
+  grid-column: 1 / -1;
+
+  @include utils.highlited(red);
+}
+
+.task-panel {
+
+  @include utils.highlited(red);
+  &:hover {
+    border-left-width: 100px;
+  }
+}
+
+.event-panel {
+
+  @include utils.highlited(red);
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+
+  @include utils.highlited(red);
+}
