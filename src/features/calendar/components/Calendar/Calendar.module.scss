@@ -4,13 +4,15 @@
   display: grid;
 
   grid-template-columns: 10% auto 10%;
-  grid-template-rows: 80px auto;
+  grid-template-rows: min-content auto;
 
   height: 100vh;
 }
 
 .topPanel {
   grid-column: 1 / -1;
+
+  padding-bottom: 10px;
 
   @include utils.highlited(red);
 }
