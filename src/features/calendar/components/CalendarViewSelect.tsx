@@ -24,7 +24,7 @@ export function CalendarViewSelect() {
       <label>View: </label>
       <select
         onChange={onChange}
-        defaultValue={calendarViews.indexOf(currentView)}
+        value={currentView}
       >
         { viewOptions }
       </select>
