@@ -1,8 +1,8 @@
-import TaskList from './components/TaskList';
+import TaskElement from './components/TaskElement';
 import tasksSlice, { tasksReducer} from './tasksSlice';
 
 export {
-  TaskList,
+  TaskElement,
   tasksSlice,
   tasksReducer,
 };

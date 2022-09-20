@@ -1,0 +1,15 @@
+@use '/styles/utils';
+
+.calendarView {
+}
+
+.monthView {
+  display: grid;
+  grid-template-columns: repeat(7, calc(100% / 7));
+  grid-template-rows: repeat(5, calc(100% / 5));
+
+  width: 100%;
+  height: 100%;
+
+  @include utils.highlited(red);
+}

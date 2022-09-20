@@ -5,7 +5,7 @@ import { useAppDispatch, useAppSelector } from '@/app/hooks';
 import { toggle } from '../tasksSlice';
 
 
-export function TaskElement(props: { id: string}) {
+export default function TaskElement(props: { id: string}) {
   const dispatch = useAppDispatch();
   const taskList = useAppSelector(state => state.tasks.taskList);
 
@@ -18,10 +18,10 @@ export function TaskElement(props: { id: string}) {
 
   return (
     <li
-      className={ styles['task-element'] }
+      className={ styles.taskElement }
       onClick={ onClick }
     >
-      { isDone ? '[x]': '[ ]'}  {name}
+      { isDone ? '[x]': '[ ]'} {name}
     </li>
   );
 }

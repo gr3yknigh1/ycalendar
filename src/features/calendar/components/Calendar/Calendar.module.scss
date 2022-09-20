@@ -9,13 +9,13 @@
   height: 100vh;
 }
 
-.top-panel {
+.topPanel {
   grid-column: 1 / -1;
 
   @include utils.highlited(red);
 }
 
-.task-panel {
+.taskPanel {
 
   @include utils.highlited(red);
   &:hover {
@@ -23,14 +23,12 @@
   }
 }
 
-.event-panel {
+.eventPanel {
 
   @include utils.highlited(red);
 }
 
-.event-grid {
-  display: grid;
-  grid-template-columns: repeat(7, auto);
+.viewPanel {
 
   @include utils.highlited(red);
 }

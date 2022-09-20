@@ -1,5 +1,0 @@
-@use '/styles/utils';
-
-.cell {
-  @include utils.highlited(blue);
-}
