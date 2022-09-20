@@ -19,6 +19,7 @@ export default function Calendar(): JSX.Element {
   return (
     <div className={ styles.calendar }>
       <div className={styles.topPanel}>
+        <h1>YCalendar</h1>
         <CalendarStateInfo/>
         <CalendarViewSelect/>
       </div>
