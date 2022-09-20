@@ -1,6 +1,6 @@
 import styles from './Calendar.module.scss';
 
-import React, { useCallback } from 'react';
+import React from 'react';
 import { useAppSelector } from '@/app/hooks';
 
 import { TaskElement } from '@/features/tasks';

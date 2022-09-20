@@ -12,7 +12,7 @@ export const calendarViews = [
 
 // TODO(gr3yknigh1): check timezone & locale & format validity and add field
 // to state
-export default interface CalendarState {
+interface CalendarState {
   timeZone: string;
   locale: string;
 
@@ -20,7 +20,9 @@ export default interface CalendarState {
 
   view: CalendarView;
   events: CalendarEvent[];
-};
+}
+
+export default CalendarState;
 
 export function loadInitialState(): CalendarState {
   const resolvedOptions = Intl.DateTimeFormat().resolvedOptions();

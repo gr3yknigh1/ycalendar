@@ -1,13 +1,15 @@
 import { v4 } from 'uuid';
 
 
-export default interface Task {
+interface Task {
   id: string;
   name: string;
   isDone: boolean;
   description: string;
   dateISO?: string;
-};
+}
+
+export default Task;
 
 export function createTask(
   name: string,

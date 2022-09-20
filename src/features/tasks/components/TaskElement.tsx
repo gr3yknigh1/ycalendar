@@ -5,7 +5,7 @@ import { useAppDispatch, useAppSelector } from '@/app/hooks';
 import { toggle } from '../tasksSlice';
 
 
-export default function TaskElement(props: { id: string}) {
+export default function TaskElement(props: { id: string; }) {
   const dispatch = useAppDispatch();
   const taskList = useAppSelector(state => state.tasks.taskList);
 

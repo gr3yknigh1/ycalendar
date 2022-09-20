@@ -2,7 +2,6 @@ import styles from './MonthCell.module.scss';
 
 import React from 'react';
 import { useAppSelector } from '@/app/hooks';
-import { TaskElement } from '@/features/tasks';
 
 
 function getDateForCell(date: number): Date {
@@ -11,7 +10,7 @@ function getDateForCell(date: number): Date {
   return new Date(currentDate.getFullYear(), currentDate.getMonth(), date);
 }
 
-export default function MonthCell(props: { dateNumber: number }): JSX.Element {
+export default function MonthCell(props: { dateNumber: number; }): JSX.Element {
   const taskList = useAppSelector(state => state.tasks.taskList);
   const cellDate = getDateForCell(props.dateNumber);
   const cellTasks = taskList.filter(
