@@ -12,6 +12,7 @@ function loadInitialState(): TasksState {
     taskList: [
       createTask('Wash dishes'),
       createTask('Make blowjob', true),
+      createTask('Task with very load name and useful description', false, null, new Date(2022, 9, 19))
     ]
   };
 }
