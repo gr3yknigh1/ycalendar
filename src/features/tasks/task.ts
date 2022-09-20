@@ -6,12 +6,15 @@ export default interface Task {
   name: string;
   isDone: boolean;
   description: string;
-}
+  dateISO?: string;
+};
 
 export function createTask(
   name: string,
   isDone = false,
-  description = ''
+  description = '',
+  date?: Date,
 ): Task {
-  return { id: v4(), name, isDone, description };
+  const dateISO = date ? date.toISOString() : null;
+  return { id: v4(), name, isDone, description, dateISO };
 }
