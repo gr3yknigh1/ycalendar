@@ -1,6 +1,9 @@
 @use '/styles/utils';
 
 .cell {
+  display: flex;
+  flex-direction: column;
+
   border: 1px solid rgb(192, 192, 192);
 }
 
@@ -9,6 +12,6 @@
 }
 
 .task {
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: clip;
 }

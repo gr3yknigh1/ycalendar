@@ -6,8 +6,8 @@ import { useAppSelector } from '@/app/hooks';
 import { TaskElement } from '@/features/tasks';
 
 import CalendarViewer from '../CalendarViewer';
-import CalendarStateInfo from '../CalendarStateInfo';
 import { CalendarViewSelect } from '../CalendarViewSelect';
+import DateSelector from '../DateSelector/DateSelector';
 
 
 export default function Calendar(): JSX.Element {
@@ -20,7 +20,7 @@ export default function Calendar(): JSX.Element {
     <div className={ styles.calendar }>
       <div className={styles.topPanel}>
         <h1>YCalendar</h1>
-        <CalendarStateInfo/>
+        <DateSelector/>
         <CalendarViewSelect/>
       </div>
       <div className={styles.eventPanel}>
